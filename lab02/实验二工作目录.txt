@@ -1,0 +1,20 @@
+ESP32+Arduino IDE环境搭建实验目录
+ 
+1. 实验准备
+硬件：电脑、ESP32、USB-C线（可选LED/电阻/面包板）
+软件：Arduino IDE、网络连接
+2. Arduino IDE安装（Windows）
+下载：官网/提供包，可选便携版
+安装：运行exe，同意协议，全选组件，自定义路径，完成后装USB驱动
+3. ESP32环境配置
+开发板支持：File→Preferences，添加ESP32 URL；开发板管理器安装esp32包
+驱动：装CH340驱动，确认COM端口
+配置：选ESP32 Dev Module，设Upload Speed/Flash Frequency等参数
+4. 环境测试
+连接：USB-C连电脑，选对应COM口
+上传测试代码（LED闪烁+串口输出），等待上传完成
+验证：串口监视器（115200波特率）看输出，LED每秒闪烁
+5. 常见问题
+上传失败：按BOOT键重试，或降低波特率
+端口不识别：换数据线/重装驱动/换USB口
+编译错误：清理文件、重启IDE、重装ESP32包
